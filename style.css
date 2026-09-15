@@ -1,0 +1,666 @@
+/* ==============================
+   SEASONSPHERE
+   PREMIUM SEASONAL UI
+   ============================== */
+
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------- BODY ---------- */
+
+body {
+    min-height: 100vh;
+
+    font-family: "Poppins", sans-serif;
+
+    color: #ffffff;
+
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255, 190, 100, 0.35), transparent 30%),
+        radial-gradient(circle at 85% 15%, rgba(255, 120, 170, 0.30), transparent 30%),
+        radial-gradient(circle at 50% 90%, rgba(80, 180, 255, 0.25), transparent 35%),
+        linear-gradient(135deg, #17112b, #281738, #122d43);
+
+    transition:
+        background 1s ease;
+}
+
+
+/* ---------- MAIN ---------- */
+
+.website {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding:
+        35px 30px
+        50px;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 70px;
+}
+
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+
+.brand-icon {
+    font-size: 28px;
+
+    color: #ffd166;
+}
+
+
+.tagline {
+    color: rgba(255,255,255,0.65);
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* ---------- HERO TEXT ---------- */
+
+.eyebrow {
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #ffd166;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+}
+
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 7vw, 86px);
+
+    line-height: 0.98;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffd166,
+            #ff8fab,
+            #8bd3ff
+        );
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+.hero-text {
+    max-width: 480px;
+
+    color: rgba(255,255,255,0.70);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ---------- MAIN CARD ---------- */
+
+.season-card {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 390px;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    background:
+        rgba(255,255,255,0.10);
+
+    border:
+        1px solid rgba(255,255,255,0.18);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.30);
+
+    backdrop-filter: blur(25px);
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+.season-card:hover {
+    transform:
+        translateY(-7px);
+}
+
+
+/* ---------- INPUT SECTION ---------- */
+
+.input-section {
+    padding: 45px 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.input-section label {
+    color: rgba(255,255,255,0.75);
+
+    font-size: 13px;
+
+    margin-bottom: 10px;
+}
+
+
+.input-wrapper {
+    position: relative;
+}
+
+
+input {
+    width: 100%;
+
+    padding: 17px 45px 17px 18px;
+
+    border: 1px solid rgba(255,255,255,0.20);
+
+    border-radius: 14px;
+
+    background:
+        rgba(0,0,0,0.18);
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 17px;
+
+    outline: none;
+
+    transition:
+        0.3s ease;
+}
+
+
+input::placeholder {
+    color: rgba(255,255,255,0.35);
+}
+
+
+input:focus {
+    border-color: #ffd166;
+
+    box-shadow:
+        0 0 0 4px rgba(255,209,102,0.10);
+}
+
+
+.input-icon {
+    position: absolute;
+
+    right: 18px;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    color: #ffd166;
+
+    pointer-events: none;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+button {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ffd166,
+            #ff9f68
+        );
+
+    color: #24152f;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        0.3s ease;
+}
+
+
+button:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(255,166,100,0.25);
+}
+
+
+.arrow {
+    font-size: 22px;
+}
+
+
+.hint {
+    margin-top: 12px;
+
+    font-size: 11px;
+
+    color: rgba(255,255,255,0.40);
+
+    text-align: center;
+}
+
+
+/* ---------- RESULT SECTION ---------- */
+
+.result-section {
+    padding: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        rgba(255,255,255,0.05);
+}
+
+
+.season-symbol {
+    width: 100px;
+
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 48px;
+
+    margin-bottom: 20px;
+
+    background:
+        rgba(255,255,255,0.10);
+
+    box-shadow:
+        inset 0 0 30px rgba(255,255,255,0.06);
+
+    transition:
+        0.5s ease;
+}
+
+
+.result-label {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: rgba(255,255,255,0.45);
+
+    margin-bottom: 8px;
+}
+
+
+.result-section h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+
+    margin-bottom: 12px;
+}
+
+
+.result-section p:last-child {
+    max-width: 250px;
+
+    color: rgba(255,255,255,0.60);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* ---------- SEASON GUIDE ---------- */
+
+.season-guide {
+    margin-top: 110px;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+
+    font-weight: 600;
+}
+
+
+.season-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.season-item {
+    padding: 25px 18px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    background:
+        rgba(255,255,255,0.07);
+
+    transition:
+        0.3s ease;
+}
+
+
+.season-item:hover {
+    transform:
+        translateY(-6px);
+
+    background:
+        rgba(255,255,255,0.12);
+}
+
+
+.season-item > span {
+    font-size: 34px;
+}
+
+
+.season-item h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+
+    margin-bottom: 5px;
+}
+
+
+.season-item p {
+    color: rgba(255,255,255,0.45);
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    text-align: center;
+
+    margin-top: 80px;
+
+    padding-top: 30px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.10);
+
+    color: rgba(255,255,255,0.40);
+
+    font-size: 11px;
+
+    letter-spacing: 0.5px;
+}
+
+
+footer p {
+    font-family: "Playfair Display", serif;
+
+    font-size: 17px;
+
+    color: rgba(255,255,255,0.75);
+
+    margin-bottom: 5px;
+}
+
+
+/* ---------- FLOATING DECORATIONS ---------- */
+
+.floating {
+    position: fixed;
+
+    pointer-events: none;
+
+    opacity: 0.25;
+
+    animation:
+        float 6s ease-in-out infinite;
+}
+
+
+.floating-one {
+    top: 15%;
+
+    left: 5%;
+
+    font-size: 40px;
+}
+
+
+.floating-two {
+    top: 55%;
+
+    right: 5%;
+
+    font-size: 50px;
+
+    animation-delay: 1s;
+}
+
+
+.floating-three {
+    bottom: 10%;
+
+    left: 10%;
+
+    font-size: 30px;
+
+    animation-delay: 2s;
+}
+
+
+@keyframes float {
+
+    0%, 100% {
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    50% {
+        transform:
+            translateY(-20px)
+            rotate(10deg);
+    }
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-text {
+        margin: auto;
+    }
+
+    .season-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .website {
+        padding:
+            25px 18px
+            40px;
+    }
+
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .tagline {
+        display: none;
+    }
+
+    .season-card {
+        grid-template-columns: 1fr;
+    }
+
+    .result-section {
+        min-height: 260px;
+    }
+
+    .season-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+}
