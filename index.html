@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SeasonSphere | Discover Your Season</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Decorative background -->
+    <div class="floating floating-one">✦</div>
+    <div class="floating floating-two">✧</div>
+    <div class="floating floating-three">❋</div>
+
+    <main class="website">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div class="brand">
+                <span class="brand-icon">◈</span>
+                <span>SeasonSphere</span>
+            </div>
+
+            <p class="tagline">
+                A beautiful journey through the seasons
+            </p>
+
+        </header>
+
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    ✦ EXPLORE THE YEAR ✦
+                </p>
+
+                <h1>
+                    Discover Your
+                    <span>Season.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Enter a month and let SeasonSphere reveal the
+                    season waiting for you.
+                </p>
+
+            </div>
+
+
+            <!-- MAIN CARD -->
+
+            <div class="season-card">
+
+                <div class="input-section">
+
+                    <label for="month">
+                        Select a month
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <input
+                            type="number"
+                            id="month"
+                            min="1"
+                            max="12"
+                            placeholder="01 — 12"
+                        >
+
+                        <span class="input-icon">⌄</span>
+
+                    </div>
+
+                    <button id="discoverBtn">
+                        <span>Discover Season</span>
+                        <span class="arrow">→</span>
+                    </button>
+
+                    <p class="hint">
+                        Enter any number from 1 to 12
+                    </p>
+
+                </div>
+
+
+                <!-- RESULT -->
+
+                <div class="result-section">
+
+                    <div class="season-symbol" id="seasonEmoji">
+                        ✦
+                    </div>
+
+                    <p class="result-label">
+                        YOUR SEASON
+                    </p>
+
+                    <h2 id="seasonName">
+                        Waiting for you
+                    </h2>
+
+                    <p id="seasonDescription">
+                        Choose a month to discover its season.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEASON GUIDE -->
+
+        <section class="season-guide">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    THE YEAR IN FOUR
+                </p>
+
+                <h2>
+                    A Season for Every Moment
+                </h2>
+
+            </div>
+
+
+            <div class="season-grid">
+
+                <div class="season-item winter">
+                    <span>❄</span>
+                    <div>
+                        <h3>Winter</h3>
+                        <p>December • January • February</p>
+                    </div>
+                </div>
+
+
+                <div class="season-item summer">
+                    <span>☀</span>
+                    <div>
+                        <h3>Summer</h3>
+                        <p>March • April • May</p>
+                    </div>
+                </div>
+
+
+                <div class="season-item rainy">
+                    <span>☂</span>
+                    <div>
+                        <h3>Rainy</h3>
+                        <p>June • July • August</p>
+                    </div>
+                </div>
+
+
+                <div class="season-item autumn">
+                    <span>🍂</span>
+                    <div>
+                        <h3>Autumn</h3>
+                        <p>September • October • November</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                SeasonSphere
+            </p>
+
+            <span>
+                Crafted as a CSE project • Explore. Discover. Enjoy.
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
